@@ -3,7 +3,7 @@
 **Site Goals**
 
 The site is aimed at providing digital for users online. It allowsusers to purchace the available art by downloading the art as a file (e.g pdf or png) to thier device and adding
-their collections. The website SHOULD offer a seamless and secure way to browse, purchase, and instantly download digital art files without unnecessary friction. The site aims to deliver a smooth, visually engaging shopping experience that builds trust through secure payments, user accounts, and clear order feedback.
+their collections. The website should offer a seamless and secure way to browse, purchase, and instantly download digital art files without unnecessary friction. The site aims to deliver a smooth, visually engaging shopping experience that builds trust through secure payments, user accounts, and clear order feedback.
 Ultimately the goal of the platform is to provide art to digital art enthusiasts in a convenient and reliable way for buyers.
 
 **Agile Planning**
@@ -11,6 +11,98 @@ Ultimately the goal of the platform is to provide art to digital art enthusiasts
 This project was developed using agile methodologies, focusing on delivering functional features in short sprints. The development cycle was divided into three sprints over a seven-day period, with each sprint building upon the previous one to ensure continuous progress.
 All features were grouped into epics and prioritized using the MoSCoW method — Must have, Should have, and Could have. “Must have” stories, such as user authentication, product listings, and payment integration, were developed first to ensure that the core e-commerce functionality was in place early. Once the essential features were complete, focus shifted to “Should have” enhancements like user feedback messages and responsive design, followed by “Could have” improvements such as marketing and SEO optimizations.
 A GitHub Projects Kanban board was used to manage workflow and track progress throughout development. Each user story was assigned a story point value to reflect its complexity and the effort required for completetion. This approach allowed for clear visibility of progress, flexibility in iteration, and ensured that all critical goals were delivered within the project timeframe.
+
+**Epics & User stories**
+
+**EPIC 1- Base Setup**
+    
+ The base setup epic is for all stories needed for the base set up of the application. Without the base setup, the app would not be possible so it was the first epic to be delivered as all other features depend on the completion of the base setup.
+
+     User stories:
+
+     - As a developer, I need to create the base.html page and structure so that other pages can reuse the layout
+
+     - As a developer, I need to create static resources so that images, css and javascript work on the website
+
+     - As a developer, I need to set up the project so that it is ready for implementing the core features
+
+     - As a developer, I need to create the footer with social media links and contact information
+
+     - As a developer, I need to create the navbar so that users can navigate the website from any device
+
+
+**EPIC 2- Stand alone pages**
+
+ The stand alone pages epic is for small pages that did not have enough stories to warrant their own full epics. Instead of creating epics for tiny features, these small deliverables were all added under this epic.
+
+     User stories:
+
+     - As a developer, I need to implement a 404 error page to alert users when they have accessed a page that doesn't exist
+
+     - As a developer, I need to implement a 500 error page to alert users when an internal server error occurs
+
+     - As a developer, I need to implement a 403 error page to redirect unauthorised users to so that I can secure my views
+
+     - As the owner of the website, I would like a home page so that customers can view information on my digital gallery. 
+
+
+**EPIC 3- Authentication & User Management**
+
+ The authentication epic is for all stories related to the registration, login and authorization of views. This epic provides critical functionality and value as without it the owner would not be able to manage the gallery securely without regular site visitors also being able to see and perform actions. 
+
+     User stories:
+
+     - As a new user, I can register for an account to make purchases and downloads.
+
+     - As a registered user, I can log in and out securely.
+
+     - As an admin, I can manage users and upload artworks.
+
+**EPIC 4- Catalogue & Art Management**
+
+ The catalogue and management epic is for all user stories relataed to the user accesing available artworks and the site owner having the ability to managae the catalogue.
+
+     User stories:
+
+     - As a customer, I can browse all available art pieces in a responsive grid.
+     
+     - As a customer, I can view detailed information about each artwork.
+     
+     - As an admin, I can add, edit, or delete artworks.
+     
+
+**EPIC 5- Checkout, orders & File Delivery**
+
+This epic focuses on user stories that enable a user to complete the payment process. this payment acceptance of payment and delivery of files. 
+
+     User stories:
+
+     - As a customer, I can securely pay for my selected artwork using Stripe.
+     
+     - As a customer, I can download my purchased art file after payment.
+     
+     - As a customer, I can download my purchased art file after payment.
+
+**EPIC 6- UX & Accesibility**
+
+This epic is for user stories related to the user experience. 
+
+     User stories:
+
+     - As a user, I want the site to be fully responsive on all devices.
+     
+     - As a user, I want the site to be fully responsive on all devices.
+
+
+**EPIC 7- Deployment**
+
+This epic is for all stories related to deploying the app to heroku so that the site is live for staff and customer use.
+
+     User stories:
+
+     - As a developer, I need to deploy the project to heroku so that it is live for customers
+
+
 
 # Deployment
 
@@ -62,3 +154,5 @@ Navigate to the GitHub Repository you want to clone to use locally:
 - Type git clone copied-git-url into the IDE terminal
 
 The project will now have been cloned on your local machine for use.
+
+**Credits**
