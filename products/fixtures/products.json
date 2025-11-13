@@ -1,0 +1,493 @@
+[
+    {
+      "pk": 1,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_001",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6, 
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-1"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_002",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-2"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_003",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-3"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_004",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-4"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_005",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-5"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_006",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-6"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_007",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-7"
+      }
+    },
+    {
+      "pk": 8,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_008",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-8"
+      }
+    },
+    {
+      "pk": 9,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_009",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-9"
+      }
+    },
+    {
+      "pk": 10,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_010",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-10"
+      }
+    },
+    {
+      "pk": 11,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_011",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-11"
+      }
+    },
+    {
+      "pk": 12,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_012",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-12"
+      }
+    },
+    {
+      "pk": 13,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_013",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-13"
+      }
+    },
+    {
+      "pk": 14,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_014",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-14"
+      }
+    },
+    {
+      "pk": 15,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_015",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-15"
+      }
+    },
+    {
+      "pk": 16,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_016",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-16"
+      }
+    },
+    {
+      "pk": 17,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_017",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-17"
+      }
+    },
+    {
+      "pk": 18,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_018",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-18"
+      }
+    },
+    {
+      "pk": 19,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_019",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-19"
+      }
+    },
+    {
+      "pk": 20,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_020",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-20"
+      }
+    },
+    {
+      "pk": 21,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_021",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-21"
+      }
+    },
+    {
+      "pk": 22,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_022",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-22"
+      }
+    },
+    {
+      "pk": 23,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_023",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-23"
+      }
+    },
+    {
+      "pk": 24,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_024",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-24"
+      }
+    },
+    {
+      "pk": 25,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_025",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-25"
+      }
+    },
+    {
+      "pk": 26,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_026",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-26"
+      }
+    },
+    {
+      "pk": 27,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_027",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-27"
+      }
+    },
+    {
+      "pk": 28,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_028",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-28"
+      }
+    },
+    {
+      "pk": 29,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_029",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-29"
+      }
+    },
+    {
+      "pk": 30,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_030",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-30"
+      }
+    },
+    {
+      "pk": 31,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_031",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-31"
+      }
+    },
+    {
+      "pk": 32,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_032",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-32"
+      }
+    },
+    {
+      "pk": 33,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_033",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-33"
+      }
+    },
+    {
+      "pk": 34,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_034",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-34"
+      }
+    },
+    {
+      "pk": 35,
+      "model": "products.product",
+      "fields": {
+        "sku": "altered_seraph_035",
+        "name": "Altered Seraphs",
+        "description": "AI generated art from Midjourney.",
+        "price": 1.00,
+        "category": 6,
+        "rating": 4.1,
+        "image_url": "",
+        "image": "altered_seraph-35"
+      }
+    }
+  ]
+  
