@@ -17,9 +17,9 @@
                 Altered Seraphs Colletion
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Portaits</a>
-                <a href="" class="dropdown-item">logo</a>
-                <a href="" class="dropdown-item">Full gallery</a>
+                <a href="{% url 'products' %}?category=portaits" class="dropdown-item">Portaits</a>
+                <a href="{% url 'products' %}?category=Logo," class="dropdown-item">logo</a>
+                <a href="{% url 'products' %}?category=Logo,portaits" class="dropdown-item">Full gallery</a>
             </div>
         </li>
 
@@ -28,9 +28,9 @@
                 Original Pieces
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Characters </a>
-                <a href="" class="dropdown-item">Background </a>
-                <a href="" class="dropdown-item">Full gallery</a>
+                <a href="{% url 'products' %}?category=characters," class="dropdown-item">Characters </a>
+                <a href="{% url 'products' %}?category=backgrounds" class="dropdown-item">Backgrounds </a>
+                <a href="{% url 'products' %}?category=logo,characters,backgraound" class="dropdown-item">Full gallery</a>
             </div>
         </li>
 
@@ -39,8 +39,8 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Free Downloads</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=backgrounds" class="dropdown-item">Free Downloads</a>
             </div>
         </li>
     </ul>
