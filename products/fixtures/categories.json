@@ -4,6 +4,6 @@
     { "pk": 3, "model": "products.category", "fields": { "name": "altered_seraphs", "friendly_name": "Altered Seraphs" } },
     { "pk": 4, "model": "products.category", "fields": { "name": "background", "friendly_name": "Backgrounds" } },
     { "pk": 5, "model": "products.category", "fields": { "name": "free", "friendly_name": "Free" } },
-    { "pk": 6, "model": "products.category", "fields": { "name": "new_arrivals", "friendly_name": "New Arrivals" } }
-
+    { "pk": 6, "model": "products.category", "fields": { "name": "new_arrivals", "friendly_name": "New Arrivals" } },
+    { "pk": 7, "model": "products.category", "fields": { "name": "characters", "friendly_name": "Characters" } }
 ]
