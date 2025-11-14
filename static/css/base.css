@@ -66,8 +66,14 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: #525252;
+	/*background: #525252;*/
+    background: url('/media/homepage_background.jpg') no-repeat scroll;
 	z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
 }
 
 /* -------------------------------- Media Queries */
