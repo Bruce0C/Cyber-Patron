@@ -1,3 +1,6 @@
+body {
+  border: 5px solid red !important;
+}
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
@@ -34,4 +37,27 @@
 #card-element {
     color: #000;
     border: 1px solid #000;
+}
+
+/* Loading overlay covers full screen */
+#loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none; /* hidden until JS shows it */
+  background: rgba(255, 255, 255, 0.8);
+
+  /* CENTER CONTENT */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Spinner */
+.spinner-border {
+  width: 4rem;
+  height: 4rem;
 }
