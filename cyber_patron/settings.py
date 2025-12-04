@@ -34,6 +34,9 @@ ALLOWED_HOSTS = [
     'cyber-patron-34aa969be4ad.herokuapp.com/'  # heroku application
 ]
 
+# HTTPS proxy
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 
 # Application definition
 
