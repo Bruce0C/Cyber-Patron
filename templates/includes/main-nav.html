@@ -39,9 +39,17 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?sort=price=0"class="dropdown-item">New Arrivals</a>
                 <a href="{% url 'products' %}?category=backgrounds" class="dropdown-item">Free Downloads</a>
             </div>
+
+            <li class="nav-item dropdown">
+                <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    News Letter
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                    <a href="{% url 'products' %}?category=backgrounds" class="dropdown-item">Sign up</a>
+                </div>
+            </li>
         </li>
     </ul>
 </div>
