@@ -48,3 +48,8 @@ def remove_from_bag(request, item_id):
 
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
+
+
+def adjust_bag(request, item_id):
+    # Logic to adjust the bag
+    return redirect('bag')
