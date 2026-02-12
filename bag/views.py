@@ -51,5 +51,17 @@ def remove_from_bag(request, item_id):
 
 
 def adjust_bag(request, item_id):
-    # Logic to adjust the bag
-    return redirect('bag')
+    """ Adjust the quantity of the specified product in the shopping bag """
+    bag = request.session.get('bag', {})
+
+    if item_id in bag:
+        quantity = int(request.POST.get('quantity', 0))
+        if quantity > 0:
+            bag[item_id] = quantity
+            messages.success(request, 'Bag updated successfully')
+        else:
+            bag.pop(item_id)
+            messages.success(request, 'Item removed from bag')
+
+    request.session['bag'] = bag
+    return redirect('view_bag')
