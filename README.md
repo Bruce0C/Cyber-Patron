@@ -1,5 +1,14 @@
 # Cyber-Patron
 
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Bruce0C/Cyber-Patron)](https://www.github.com/Bruce0C/Cyber-Patron/commits/main)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Bruce0C/Cyber-Patron)](https://www.github.com/Bruce0C/Cyber-Patron/commits/main)
+[![GitHub repo size](https://img.shields.io/github/repo-size/Bruce0C/Cyber-Patron)](https://www.github.com/Bruce0C/Cyber-Patron)
+[![badge](https://img.shields.io/badge/deployment-Heroku-purple)](https://cyber-patron-34aa969be4ad.herokuapp.com)
+
+![screenshot](documentation/mockup.png)
+
+source: [Cyber-Patron amiresponsive](https://ui.dev/amiresponsive?url=https://cyber-patron-34aa969be4ad.herokuapp.com)
+
 **Site Goals**
 
 The site is aimed at providing digital for users online. It allowsusers to purchace the available art by downloading the art as a file (e.g pdf or png) to thier device and adding
@@ -101,6 +110,108 @@ This epic is for all stories related to deploying the app to heroku so that the 
      User stories:
 
      - As a developer, I need to deploy the project to heroku so that it is live for customers
+
+
+
+## UX
+
+### The 5 Planes of UX
+
+⚠️ NOTE: make sure to update the text below to match your own project! ⚠️
+
+#### 1. Strategy
+
+**Purpose**
+- Provide an e-commerce platform for users to browse, purchase, and manage products.
+- Enable site owners to manage inventory and track sales effectively.
+
+**Primary User Needs**
+- Easy navigation to browse and filter products.
+- A secure and seamless checkout process.
+- Ability to track orders and view purchase history.
+- Access to promotions and discounts.
+
+**Business Goals**
+- Increase sales and revenue through an intuitive online store.
+- Build customer loyalty with user accounts and order tracking.
+- Promote products effectively through a visually appealing design.
+- Collect user data for marketing and analytics purposes.
+
+---
+
+#### 2. Scope
+
+**[Features](#features)** (see below)
+- Product catalog with filtering and sorting options.
+- Shopping cart functionality with item adjustments.
+- User authentication for account creation and login.
+- Secure payment integration with Stripe.
+- Admin dashboard for inventory management.
+- Newsletter signup for promotional updates.
+
+**Content Requirements**
+- Product descriptions, images, and pricing.
+- User account details and order history.
+- Checkout forms for billing and shipping information.
+- Marketing banners for promotions and sales.
+
+---
+
+#### 3. Structure
+
+**Information Architecture**
+- **Navigation Menu**:
+  - Home
+  - Products (with categories and filters)
+  - Bag/Cart
+  - Checkout
+  - User Profile (for logged-in users)
+  - Admin Dashboard (for site owners)
+- **Hierarchy**:
+  - Homepage → Product Categories → Product Details → Add to Cart → Checkout
+  - User Profile → Order History → Order Details
+
+**User Flow**
+1. Guest user browses the store → filters and sorts products by category, price, or name.
+2. Guest user adds items to the cart → proceeds to checkout.
+3. Guest user creates an account or logs in during checkout → completes purchase.
+4. Returning customers log in → view past orders and track purchase history.
+5. Site owners manage inventory → add, update, or delete products and categories.
+6. Users signup to the newsletter → potentially receive advanced notice of upcoming sales.
+
+---
+
+#### 4. Skeleton
+
+**[Wireframes](#wireframes)** (see below)
+- Homepage wireframe with featured products and categories.
+- Product listing page with filters and sorting options.
+- Product details page with "Add to Cart" functionality.
+- Shopping cart page with item adjustments and checkout button.
+- Checkout page with billing and shipping forms.
+- User profile page with order history and account settings.
+- Admin dashboard wireframe for inventory management.
+
+---
+
+#### 5. Surface
+
+**Visual Design Elements**
+- **Color Scheme**:
+  - Primary colors: Blue and white for a clean and professional look.
+  - Accent colors: Green for success messages and red for errors.
+- **Typography**:
+  - Sans-serif fonts for readability and modern design.
+  - Consistent font sizes for headings, subheadings, and body text.
+- **Imagery**:
+  - High-quality product images with consistent dimensions.
+  - Promotional banners for sales and discounts.
+- **Buttons and Icons**:
+  - Clear and accessible buttons with hover effects.
+  - Intuitive icons for navigation and actions (e.g., cart, profile).
+- **Layout**:
+  - Responsive design for mobile, tablet, and desktop devices.
+  - Grid-based layout for product listings and content organization.
 
 
 
