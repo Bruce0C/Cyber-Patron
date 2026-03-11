@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     # Other installed apps
     'django_countries',
     'crispy_forms',
+    'crispy_bootstrap4',
 ]
 
 MIDDLEWARE = [
@@ -76,15 +77,9 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
 ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 ROOT_URLCONF = 'cyber_patron.urls'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
-CSRF_TRUSTED_ORIGINS = [
-    'https://cyber-patron.herokuapp.com'
-]
 
 TEMPLATES = [
     {
@@ -175,6 +170,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://cyber-patron.herokuapp.com'
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
