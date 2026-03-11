@@ -176,7 +176,6 @@ USE_TZ = True
 WSGI_APPLICATION = 'cyber_patron.wsgi.application'
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 WSGI_APPLICATION = 'cyber_patron.wsgi.application'
-SITE_ID = 1
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 SITE_ID = 1
