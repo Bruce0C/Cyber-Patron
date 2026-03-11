@@ -124,17 +124,6 @@ TEMPLATES = [
 ]
 
 # Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-# DATABASES = {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#  'default': {
-#        'NAME': BASE_DIR / 'db.sqlite3',
-#        #   'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-# }
-
-# Only use once databasese are working
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
