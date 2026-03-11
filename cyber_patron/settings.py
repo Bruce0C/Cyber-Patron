@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
-    'cyber-patron-34aa969be4ad.herokuapp.com/',  # heroku application
+    'cyber-patron-34aa969be4ad.herokuapp.com',  # heroku application
     'localhost',  # listen for stripe webhooks
     '127.0.0.1'  # local host
 ]
