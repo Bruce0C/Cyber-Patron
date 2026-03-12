@@ -230,6 +230,126 @@ The following git commands were used throughout development to push code to the 
 - git push - This command was used to push all committed code to the remote repository on github.
 
 
+
+
+
+
+
+
+
+## Database Design
+
+### Data Model
+
+Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models. Understanding the relationships between different tables can save time later in the project.
+
+![screenshot](/media/erd-diagram.jpeg)
+
+I have used `Mermaid` to generate an interactive ERD of my project.
+
+```erDiagram
+    User {
+        int id PK
+        varchar username
+        varchar email
+        varchar password
+    }
+
+    UserProfile {
+        int id PK
+        varchar default_phone_number
+        varchar default_street_address1
+        varchar default_street_address2
+        varchar default_town_or_city
+        varchar default_county
+        varchar default_postcode
+        varchar default_country
+    }
+
+    User ||--|| UserProfile : has_one
+
+    Category {
+        int id PK
+        varchar name
+        varchar friendly_name
+    }
+
+    Product {
+        int id PK
+        varchar sku
+        varchar name
+        text description
+        bool has_sizes
+        decimal price
+        decimal rating
+        varchar image_url
+        image image
+    }
+
+    Product ||--o| Category : belongs_to
+
+    Order {
+        int id PK
+        varchar order_number
+        varchar full_name
+        varchar email
+        varchar phone_number
+        varchar country
+        varchar postcode
+        varchar town_or_city
+        varchar street_address1
+        varchar street_address2
+        varchar county
+        datetime date
+        decimal delivery_cost
+        decimal order_total
+        decimal grand_total
+        text original_bag
+        varchar stripe_pid
+    }
+
+    OrderLineItem {
+        int id PK
+        int quantity
+        decimal lineitem_total
+        varchar product_size
+    }
+
+    Order ||--o| OrderLineItem : has_many
+    OrderLineItem ||--o| Product : belongs_to
+
+    Order ||--o| UserProfile : belongs_to
+
+    Newsletter {
+        int id PK
+        varchar email
+    }
+
+    Contact {
+        int id PK
+        varchar name
+        varchar email
+        text message
+    }
+
+    FAQ {
+        int id PK
+        varchar question
+        text answer
+    }
+```
+
+source: [Mermaid](https://mermaid.live/edit#pako:eNqVVltvmzAU_ivIz2kV1qRc3qpOk6bdOk17mSIhB58Qa8amx3ZT2uS_z0BISggN4yEy5-5zvu-EV5IqBiQmgB85zZDmC-m557cG9F6bc_VwaTzOvIcvR9ETxXRN0bPOVNIc-hrIKRd9cUG13ihkjWa3kMeUD6hWXMDIzAxW1AqTFGslIZE2XwIOW2mDACahjCFo7Y81_DBsaNRGJgqTlJty2CpVVr6nL5Q21RAuRMDyTL-87fbqarvt9C721lQnriOt4T01kCksR3b1_CxXyEEyUSZH9aESl5nZ1IyMr__aS0kNPBt3e50iLwxX8qhZKiXq-2n-AvooZ5DynAqvQJ5CX4zUcJn10zplBonFNyitRc3vwDWrnqvtsa2xtwShZKYdIFrbH8hGE0hVtoPwXVkhkv_j17t06ICp4zaIw_dxfpFXF_l0yhDmOmt4DvWhP0wGgj8Blo4X2vTVTTuNMlT0lW7DSXaqrOGmkGdcUpEsaXb2DryApOCnW6se9Fcu4bOB_MLAK9GjpdJ0-tiWJlwQ7oKcVneYTwO_Gvnnimhx2a2o2QY5leW5evcuLbKHkbw37O6ZvvF32GgBxozG_hsIH25zr6Sho9fJKGrUE84d-vqs_nT3c2SmRwu6u43qsFTqTUu0HZmQDDkjsUELE5IDukLcK6lTLIhZgyuXxO643-4LspCVW0HlH6Xy1hOVzdbtiy0qJuz_oEm8okI7KbVG_Spl2lq5CCR-Jc8k9qPpdeiH4cyf34SzWRDeTEjpxP70en4zDaK5fxvMouh2vpuQlzrp9Dq4jaJZGIbTMJjOwsh3JbiFD3hfkdP5BlEwIcC4Ufit-WSovxx2_wAte5X_)
+
+
+## Agile Development Process
+
+### GitHub Projects
+
+[GitHub Projects](https://www.github.com/Bruce0C/Cyber-Patron/projects) served as an Agile tool for this project. Through it, EPICs, User Stories, issues/bugs, and Milestone tasks were planned, then subsequently tracked on a regular basis using the Kanban project board.
+
+![screenshot](/media/agile-methodology.jpeg)
+
 ### GitHub Issues
 
 [GitHub Issues](https://www.github.com/Bruce0C/Cyber-Patron/issues) served as an another Agile tool. There, I managed my User Stories and Milestone tasks, and tracked any issues/bugs.
