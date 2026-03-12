@@ -40,6 +40,13 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 ### JavaScript
 
+I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
+
+| Directory | File | URL | Screenshot | Notes |
+| --- | --- | --- | --- | --- |
+| checkout | [stripe_elements.js](https://github.com/Bruce0C/Cyber-Patron/blob/main/checkout/static/checkout/js/stripe_elements.js) |  | ![screenshot](documentation/validation/js-checkout-stripe_elements.png) | ⚠️ Notes (if applicable) |
+| profiles | [country_field.js](https://github.com/Bruce0C/Cyber-Patron/blob/main/profiles/static/profiles/js/country_field.js) |  | ![screenshot](documentation/validation/js-profiles-country_field.png) | ⚠️ Notes (if applicable) |
+
 ### Python
 
 ## Responsiveness
