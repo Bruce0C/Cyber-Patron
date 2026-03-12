@@ -230,6 +230,26 @@ The following git commands were used throughout development to push code to the 
 - git push - This command was used to push all committed code to the remote repository on github.
 
 
+## UX
+
+### The 5 Planes of UX
+
+#### 1. Strategy
+
+**Purpose**
+- Provide a seamless and intuitive e-commerce experience for customers to browse, filter, and purchase products.
+- Empower site owners to manage the store's inventory and customer orders efficiently.
+
+**Primary User Needs**
+- Guest users need to browse products and checkout with ease.
+- Registered customers need a streamlined shopping experience with account and order history features.
+- Site owners need robust tools for inventory and order management.
+
+**Business Goals**
+- Drive sales by providing a user-friendly shopping experience.
+- Build customer loyalty through personalized and efficient account features.
+- Maintain an organized and up-to-date store inventory.
+
 #### 2. Scope
 
 **[Features](#features)** (see below)
@@ -276,7 +296,7 @@ I used [coolors.co](https://coolors.co/080708-3772ff-df2935-fdca40-e6e8e6) to ge
 
 - `#000000` primary text.
 - 
-![screenshot](/media/homepage_background.jpg)
+![screenshot](/media/local-homepage.jpeg)
 
 
 ### Typography
