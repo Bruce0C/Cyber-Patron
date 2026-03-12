@@ -29,6 +29,15 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 ### CSS
 
+
+I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
+
+| Directory | File | URL | Screenshot | Notes |
+| --- | --- | --- | --- | --- |
+| checkout | [checkout.css](https://github.com/Bruce0C/Cyber-Patron/blob/main/checkout/static/checkout/css/checkout.css) | ⚠️ Link (if applicable) | ![screenshot](documentation/validation/css-checkout-checkout.png) | ⚠️ Notes (if applicable) |
+| profiles | [profile.css](https://github.com/Bruce0C/Cyber-Patron/blob/main/profiles/static/profiles/css/profile.css) | ⚠️ Link (if applicable) | ![screenshot](documentation/validation/css-profiles-profile.png) | ⚠️ Notes (if applicable) |
+| static | [base.css](https://github.com/Bruce0C/Cyber-Patron/blob/main/static/css/base.css) | ⚠️ Link (if applicable) | ![screenshot](documentation/validation/css-static-base.png) | ⚠️ Notes (if applicable) |
+
 ### JavaScript
 
 ### Python
