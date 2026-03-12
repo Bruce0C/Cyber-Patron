@@ -229,30 +229,132 @@ The following git commands were used throughout development to push code to the 
 
 - git push - This command was used to push all committed code to the remote repository on github.
 
-**Heroku Deployment**
+### Heroku Deployment
 
-The site was deployed to Heroku. The steps to deploy are as follows:
+This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
 
-- Navigate to heroku and create an account
-- Click the new button in the top right corner
-- Select create new app
-- Enter app name
-- Select region and click create app
-- Click the resources tab and search for Heroku Postgres
-- Select hobby dev and continue
-- Go to the settings tab and then click reveal config vars
-- Add the following config vars:
-- SECRET_KEY: (Your secret key)
-- DATABASE_URL: (This should already exist with add on of postgres)
-- EMAIL_HOST_USER: (email address)
-- EMAIL_HOST_PASS: (email app password)
-- Click the deploy tab
-- Scroll down to Connect to GitHub and sign in / authorize when prompted
-- In the search box, find the repositoy you want to deploy and click connect
-- Scroll down to Manual deploy and choose the main branch
-- Click deploy
+Deployment steps are as follows, after account setup:
 
-The app should now be deployed.
+- Select **New** in the top-right corner of your Heroku Dashboard, and select **Create new app** from the dropdown menu.
+- Your app name must be unique, and then choose a region closest to you (EU or USA), then finally, click **Create App**.
+- From the new app **Settings**, click **Reveal Config Vars**, and set your environment variables to match your private `env.py` file.
+
+> [!IMPORTANT]  
+> This is a sample only; you would replace the values with your own if cloning/forking my repository.
+
+| Key | Value |
+| --- | --- |
+| `AWS_ACCESS_KEY_ID` | user-inserts-own-aws-access-key-id |
+| `AWS_SECRET_ACCESS_KEY` | user-inserts-own-aws-secret-access-key |
+| `DATABASE_URL` | user-inserts-own-postgres-database-url |
+| `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
+| `EMAIL_HOST_PASS` | user-inserts-own-gmail-api-key |
+| `EMAIL_HOST_USER` | user-inserts-own-gmail-email-address |
+| `SECRET_KEY` | any-random-secret-key |
+| `STRIPE_PUBLIC_KEY` | user-inserts-own-stripe-public-key |
+| `STRIPE_SECRET_KEY` | user-inserts-own-stripe-secret-key |
+| `STRIPE_WH_SECRET` | user-inserts-own-stripe-webhook-secret |
+| `USE_AWS` | True |
+
+Heroku needs some additional files in order to deploy properly.
+
+- [requirements.txt](requirements.txt)
+- [Procfile](Procfile)
+- [.python-version](.python-version)
+
+You can install this project's **[requirements.txt](requirements.txt)** (*where applicable*) using:
+
+- `pip3 install -r requirements.txt`
+
+If you have your own packages that have been installed, then the requirements file needs updated using:
+
+- `pip3 freeze --local > requirements.txt`
+
+The **[Procfile](Procfile)** can be created with the following command:
+
+- `echo web: gunicorn app_name.wsgi > Procfile`
+- *replace `app_name` with the name of your primary Django app name; the folder where `settings.py` is located*
+
+The **[.python-version](.python-version)** file tells Heroku the specific version of Python to use when running your application.
+
+- `3.12` (or similar)
+
+For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
+
+Either (*recommended*):
+
+- Select **Automatic Deployment** from the Heroku app.
+
+Or:
+
+- In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a app_name` (*replace `app_name` with your app name*)
+- After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type:
+	- `git push heroku main`
+
+The project should now be connected and deployed to Heroku!
+
+### PostgreSQL
+
+This project uses a [Code Institute PostgreSQL Database](https://dbs.ci-dbs.net) for the Relational Database with Django.
+
+> [!CAUTION]
+> - PostgreSQL databases by Code Institute are only available to CI Students.
+> - You must acquire your own PostgreSQL database through some other method if you plan to clone/fork this repository.
+> - Code Institute students are allowed a maximum of 8 databases.
+> - Databases are subject to deletion after 18 months.
+
+To obtain my own Postgres Database from Code Institute, I followed these steps:
+
+- Submitted my email address to the CI PostgreSQL Database link above.
+- An email was sent to me with my new Postgres Database.
+- The Database connection string will resemble something like this:
+    - `postgres://<db_username>:<db_password>@<db_host_url>/<db_name>`
+- You can use the above URL with Django; simply paste it into your `env.py` file and Heroku Config Vars as `DATABASE_URL`.
+
+### Stripe API
+
+This project uses [Stripe](https://stripe.com) to handle the ecommerce payments.
+
+Once you've created a Stripe account and logged-in, follow these series of steps to get your project connected.
+
+- From your Stripe dashboard, click to expand the "Get your test API keys".
+- You'll have two keys here:
+	- `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
+	- `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
+
+As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
+
+- From your Stripe dashboard, click **Developers**, and select **Webhooks**.
+- From there, click **Add Endpoint**.
+	- `https://cyber-patron-34aa969be4ad.herokuapp.com/checkout/wh/`
+- Click **receive all events**.
+- Click **Add Endpoint** to complete the process.
+- You'll have a new key here:
+	- `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
+
+### Gmail API
+
+This project uses [Gmail](https://mail.google.com) to handle sending emails to users for purchase order confirmations.
+
+Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
+
+- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
+- Click on the **Accounts and Import** tab.
+- Within the section called "Change account settings", click on the link for **Other Google Account settings**.
+- From this new page, select **Security** on the left.
+- Select **2-Step Verification** to turn it on. (*verify your password and account*)
+- Once verified, select **Turn On** for 2FA.
+- Navigate back to the **Security** page, and you'll see a new option called **App passwords** (*search for it at the top, if not*).
+- This might prompt you once again to confirm your password and account.
+- Select **Mail** for the app type.
+- Select **Other (Custom name)** for the device type.
+    - Any custom name, such as "Django" or `Cyber-Patron`
+- You'll be provided with a 16-character password (API key).
+    - Save this somewhere locally, as you cannot access this key again later!
+    - If your 16-character password contains *spaces*, make sure to remove them entirely.
+    - `EMAIL_HOST_PASS` = user's 16-character API key
+    - `EMAIL_HOST_USER` = user's own personal Gmail email address
 
 
 ### Local Development
