@@ -229,6 +229,12 @@ The following git commands were used throughout development to push code to the 
 
 - git push - This command was used to push all committed code to the remote repository on github.
 
+### Sitemap
+
+I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file. This was generated using my deployed site URL: https://cyber-patron-34aa969be4ad.herokuapp.com
+
+After it finished crawling the entire site, it created a [sitemap.xml](sitemap.xml), which I've downloaded and included in the repository.
+
 ### Robots
 
 I've created the [robots.txt](robots.txt) file at the root-level. Inside, I've included the default settings:
