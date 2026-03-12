@@ -1,0 +1,6 @@
+```txt
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Sitemap: https://cyber-patron-34aa969be4ad.herokuapp.com/sitemap.xml
+```
