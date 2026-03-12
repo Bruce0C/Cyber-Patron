@@ -14,6 +14,16 @@ from pathlib import Path
 import dj_database_url
 if os.path.isfile('env.py'):
     import env
+from storages.backends.s3boto3 import S3Boto3Storage
+
+
+class StaticStorage(S3Boto3Storage):
+    location = 'static'
+
+
+class MediaStorage(S3Boto3Storage):
+    location = 'media'
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
