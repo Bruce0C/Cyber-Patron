@@ -230,20 +230,63 @@ The following git commands were used throughout development to push code to the 
 - git push - This command was used to push all committed code to the remote repository on github.
 
 
+#### 2. Scope
+
+**[Features](#features)** (see below)
+
+**Content Requirements**
+- Product details, including name, price, description, category, and images.
+- Clear prompts and instructions for browsing, filtering, and purchasing.
+- Order details, confirmation pages, and email notifications.
+- Secure payment processing using Stripe.
+- Payment success emails sent to users.
+- 404 page for lost users.
+
+#### 3. Structure
+
+**Information Architecture**
+- **Navigation Menu**:
+  - Links to Home, Products, Cart, and Account sections.
+- **Hierarchy**:
+  - Prominent product categories and filters for easy navigation.
+  - Cart and checkout options displayed prominently for convenience.
+
+**User Flow**
+1. Guest user browses the store → filters and sorts products by category, price, or name.
+2. Guest user adds items to the cart → proceeds to checkout.
+3. Guest user creates an account or logs in during checkout → completes purchase.
+4. Returning customers log in → view past orders and track purchase history.
+5. Site owners manage inventory → add, update, or delete products and categories.
+6. Users signup to the newsletter → potentially receive advanced notice of upcoming sales.
+
+#### 4. Skeleton
+
+**[Wireframes](#wireframes)** (see below)
 
 
+#### 5. Surface
+
+**Visual Design Elements**
+- **[Colours](#colour-scheme)** (see below)
+- **[Typography](#typography)** (see below)
+
+### Colour Scheme
+
+I used [coolors.co](https://coolors.co/080708-3772ff-df2935-fdca40-e6e8e6) to generate my color palette.
+
+- `#000000` primary text.
+- 
+![screenshot](/media/homepage_background.jpg)
 
 
+### Typography
 
+- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
+- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
+- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
 
 ## Wireframes
-
-⚠️ INSTRUCTIONS ⚠️
-
-If you've created wireframes or mock-ups, use this section to display screenshots of your wireframes. The example table below uses sample pages from the walkthrough project to give you some inspiration for your own project, so please adjust accordingly.
-
-⚠️ --- END --- ⚠️
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
