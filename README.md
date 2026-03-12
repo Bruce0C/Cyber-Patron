@@ -229,6 +229,69 @@ The following git commands were used throughout development to push code to the 
 
 - git push - This command was used to push all committed code to the remote repository on github.
 
+
+### GitHub Issues
+
+[GitHub Issues](https://www.github.com/Bruce0C/Cyber-Patron/issues) served as an another Agile tool. There, I managed my User Stories and Milestone tasks, and tracked any issues/bugs.
+
+| Link | Screenshot |
+| --- | --- |
+| [![GitHub issues](https://img.shields.io/github/issues-search/Bruce0C/Cyber-Patron?query=is%3Aissue%20is%3Aopen%20-label%3Abug&label=Open%20Issues&color=yellow)](https://www.github.com/Bruce0C/Cyber-Patron/issues?q=is%3Aissue%20is%3Aopen%20-label%3Abug) | ![screenshot](/media/agile-methodology.jpeg) |
+| [![GitHub closed issues](https://img.shields.io/github/issues-search/Bruce0C/Cyber-Patron?query=is%3Aissue%20is%3Aclosed%20-label%3Abug&label=Closed%20Issues&color=green)](https://www.github.com/Bruce0C/Cyber-Patron/issues?q=is%3Aissue%20is%3Aclosed%20-label%3Abug) | ![screenshot](/media/agile-methodology.jpeg) |
+
+### MoSCoW Prioritization
+
+I've decomposed my Epics into User Stories for prioritizing and implementing them. Using this approach, I was able to apply "MoSCoW" prioritization and labels to my User Stories within the Issues tab.
+
+- **Must Have**: guaranteed to be delivered - required to Pass the project (*max ~60% of stories*)
+- **Should Have**: adds significant value, but not vital (*~20% of stories*)
+- **Could Have**: has small impact if left out (*the rest ~20% of stories*)
+- **Won't Have**: not a priority for this iteration - future features
+
+
+## Ecommerce Business Model
+
+This site sells goods to individual customers, and therefore follows a **Business to Customer** model. It is of the simplest **B2C** forms, as it focuses on individual transactions, and doesn't need anything such as monthly/annual subscriptions.
+
+It is still in its early development stages, and will soon have a newletter and links for social media marketing.
+
+Social media can potentially build a community of users around the business, and boost site visitor numbers, especially when using larger platforms such a Facebook.
+
+A newsletter list can be used by the business to send regular messages to site users. For example, what items are on special offer, new items in stock, updates to business hours, notifications of events, and much more!
+
+## SEO & Marketing
+
+### Keywords
+
+I've identified some appropriate keywords to align with my site, that should help users when searching online to find my page easily from a search engine. This included a series of the following keyword types:
+
+- **Short-tail (head terms) keywords**
+   - E-commerce
+   - Online store
+   - Buy products
+   - Shopping cart
+   -  Checkout
+   - Online shopping
+   - Product catalog
+   - Secure payments
+   - Discounts
+   - User accounts
+
+- **Long-tail keywords**
+   - Buy affordable electronics online
+   - Secure online payment with Stripe
+   - Best deals on fashion products
+   - How to track orders online
+   - Create an account for order tracking
+   - Discounted products for sale
+   - Easy-to-use shopping cart system
+   - Browse product categories online
+   - Fast delivery e-commerce platform
+   - Sign up for exclusive discounts
+
+I've also played around with [Word Tracker](https://www.wordtracker.com) a bit to check the frequency of some of my site's primary keywords (until the free trial expired).
+
+
 ### Sitemap
 
 I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file. This was generated using my deployed site URL: https://cyber-patron-34aa969be4ad.herokuapp.com
